@@ -17,13 +17,13 @@ Secondly, set flag _spawn-control_ for current regions `/rg setflag <region> spa
 And it's ready to work :smiley:
 
 ## Commands
-####/spawncontrol reload
+#### /spawncontrol reload
 **Permission:** spawncontorol.reload\
 **Description:** reloads the plugin configuration
 
 I don't recommend to use it because 
 
-####/spawncontrol logging enable/disable
+#### /spawncontrol logging enable/disable
 **Permission:** spawncontrol.logging\
 **Description:** start/stop showing in console all mobs with their spawn reason that has spawned now.
 The command helps to get important spawn reasons
