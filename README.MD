@@ -1,5 +1,5 @@
 # SpawnControl
-Simple Spigot plugin that allows current spawn reasons in current WorldGuard regions
+Simple Spigot plugin that allows certain spawn reasons in certain WorldGuard regions
 ## How to use it
 Firstly, add into config.yml groups and their spawn reasons to allow like in the example below
 ```yaml
@@ -21,16 +21,19 @@ And it's ready to work :smiley:
 **Permission:** spawncontorol.reload\
 **Description:** reloads the plugin configuration
 
-I recommend to use it while your server is developing only. The plugin doesn't work while reloading.
+I recommend using it while your server is debugging. The plugin doesn't work while reloading.
 
 ### /spawncontrol logging enable/disable
 **Permission:** spawncontrol.logging\
 **Description:** start/stop showing in console all mobs that has spawned now and their spawn reason.
-The command helps to get necessary spawn reasons
+The command helps to get necessary spawn reasons.
 ## Todo list
-- [ ] Make table with spawn reasons
-- [x] Solve ACF problem (include it to build or public it as an external plugin)
-- [ ] Add builds of the plugin to Spigot site
+- [x] Initial sketch of the plugin
+- [x] Publish the plugin on GitHub
+- [x] Move the plugin from ACF to Spigot Command 
 - [x] Logging spawn reasons to player
+- [ ] Add disallow-spawn-reason-groups
+- [ ] Publish builds of the plugin to Spigot site
+
 
 If you have any idea or any problem with the plugin, don't be afraid to issue it.
