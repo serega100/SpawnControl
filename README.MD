@@ -30,7 +30,7 @@ The command helps to get necessary spawn reasons.
 ## Todo list
 - [x] Initial sketch of the plugin
 - [x] Publish the plugin on GitHub
-- [x] Move the plugin from ACF to Spigot Command 
+- [x] Move the plugin command handler from ACF to Spigot command executor
 - [x] Logging spawn reasons to player
 - [ ] Add disallow-spawn-reason-groups
 - [ ] Publish builds of the plugin to Spigot site
