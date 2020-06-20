@@ -29,8 +29,8 @@ I recommend to use it while your server is developing only. The plugin doesn't w
 The command helps to get necessary spawn reasons
 ## Todo list
 - [ ] Make table with spawn reasons
-- [ ] Solve ACF problem (include it to build or public it as an external plugin)
+- [x] Solve ACF problem (include it to build or public it as an external plugin)
 - [ ] Add builds of the plugin to Spigot site
-- [ ] Logging spawn reasons to player
+- [x] Logging spawn reasons to player
 
 If you have any idea or any problem with the plugin, don't be afraid to issue it.

@@ -15,10 +15,10 @@ public class GroupFlag extends Flag<String> {
     @Override
     public String parseInput(FlagContext flagContext) throws InvalidFlagFormat {
         String str = flagContext.getUserInput().split(" ")[0].toLowerCase();
-        if (SpawnControl.haveGroup(str)) {
+        if (SpawnControl.getInstance().hasGroup(str)) {
             return str;
         } else {
-            throw new InvalidFlagFormat("Group " + str + " is not defined!");
+            throw new InvalidFlagFormat(SpawnControl.CHAT_PREFIX + "Group " + str + " is not defined!");
         }
     }
 

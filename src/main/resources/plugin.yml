@@ -2,3 +2,7 @@ name: SpawnControl
 version: '1.0'
 main: me.serega100.spawnControl.SpawnControl
 depend: [WorldGuard]
+
+commands:
+  spawncontrol:
+    description: Command of SpawnControl plugin
