@@ -62,7 +62,9 @@ public class SpawnListener implements Listener
 
         for (CommandSender sender : plugin.getLoggingCmdSenders()) {
             StringJoiner joiner = new StringJoiner(", ");
-            for (ProtectedRegion rg : regions) {
+            if (regions.size() == 0) {
+                joiner.add(ChatColor.GRAY.toString() + ChatColor.ITALIC + "<none>" + ChatColor.WHITE);
+            } else for (ProtectedRegion rg : regions) {
                 joiner.add(ChatColor.GOLD + rg.getId() + ChatColor.WHITE);
             }
             String preFix = "Region";
