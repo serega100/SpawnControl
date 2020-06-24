@@ -1,15 +1,21 @@
 # SpawnControl
-Simple Spigot plugin that allows certain spawn reasons in certain WorldGuard regions
+Simple Spigot plugin that allows or disallows certain spawn reasons in certain WorldGuard regions.
 ## How to use it
-Firstly, add into config.yml groups and their spawn reasons to allow like in the example below
+Firstly, add into config.yml groups with their mode and spawn reasons like in the example below
 ```yaml
-allowed-spawn-reason-groups:
+spawn-groups:
   default:
-    - CUSTOM
-    - SPAWNER_EGG
-  plugins_only:
-    - CUSTOM
+    mode: allow
+    reasons:
+      - CUSTOM
+      - SPAWNER_EGG
+  disallow_plugins:
+    mode: disallow
+    reasons:
+      - CUSTOM
 `````
+There are available two modes: allow, disallow
+
 The spawn reasons can be found on [Spigot JavaDocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html)
  
 Secondly, set flag _spawn-control_ for current regions `/rg flag <region> spawn-control <spawn-group>`
