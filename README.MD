@@ -38,7 +38,7 @@ The command helps to get necessary spawn reasons.
 - [x] Publish the plugin on GitHub
 - [x] Move the plugin command handler from ACF to Spigot command executor
 - [x] Logging spawn reasons to player
-- [ ] Add disallow-spawn-reason-groups
+- [x] Add disallow mode
 - [ ] Publish builds of the plugin to Spigot site
 
 
