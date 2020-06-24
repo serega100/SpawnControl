@@ -34,13 +34,14 @@ public class SpawnListener implements Listener
         }
 
         ApplicableRegionSet applicableRegions = rm.getApplicableRegions(loc);
-        String group = applicableRegions.queryValue(null, SpawnControl.GROUP_FLAG);
+        String groupName = applicableRegions.queryValue(null, SpawnControl.GROUP_FLAG);
         Set<ProtectedRegion> regions = applicableRegions.getRegions();
 
-        if (group != null) {
+        if (groupName != null) {
             try {
-                Set<CreatureSpawnEvent.SpawnReason> reasons = plugin.getReasonsFromGroup(group);
-                if (!reasons.contains(event.getSpawnReason())) {
+                SpawnGroup group = plugin.getSpawnGroup(groupName);
+                if ((group.getMode() == SpawnGroup.Mode.ALLOW && !group.hasReason(event.getSpawnReason())) ||
+                        (group.getMode() == SpawnGroup.Mode.DISALLOW && group.hasReason(event.getSpawnReason()))) {
                     event.setCancelled(true);
                 }
             } catch (SpawnControl.GroupIsNotDefined e) {

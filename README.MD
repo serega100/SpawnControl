@@ -12,7 +12,7 @@ allowed-spawn-reason-groups:
 `````
 The spawn reasons can be found on [Spigot JavaDocs](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html)
  
-Secondly, set flag _spawn-control_ for current regions `/rg setflag <region> spawn-control <spawn-group>`
+Secondly, set flag _spawn-control_ for current regions `/rg flag <region> spawn-control <spawn-group>`
 
 And it's ready to work :smiley:
 
@@ -25,7 +25,7 @@ I recommend using it while your server is debugging. The plugin doesn't work whi
 
 ### /spawncontrol logging enable/disable
 **Permission:** spawncontrol.logging\
-**Description:** start/stop showing in console all mobs that has spawned now and their spawn reason.
+**Description:** start/stop showing for you all mobs that has spawned now and their spawn reason.
 The command helps to get necessary spawn reasons.
 ## Todo list
 - [x] Initial sketch of the plugin

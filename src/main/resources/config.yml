@@ -1,7 +1,11 @@
 # Here you can add groups with spawn reasons that will be allowed on WorldGuard regions
-allowed-spawn-reason-groups:
+spawn-groups:
   default:
-    - CUSTOM
-    - SPAWNER_EGG
-  plugins_only:
-    - CUSTOM
+    mode: allow
+    reasons:
+      - CUSTOM
+      - SPAWNER_EGG
+  disallow_plugins:
+    mode: disallow
+    reasons:
+      - CUSTOM
