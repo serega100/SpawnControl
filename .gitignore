@@ -1,5 +1,8 @@
 # IDEA files
 *.iml
-.idea
+.idea/
 # Compiled files
-target
+target/
+**/build/
+# Gradle files
+/.gradle/
